@@ -1,0 +1,230 @@
+@font-face {
+    font-family: "Gilroy-Regular";
+    src: url("https://db.onlinewebfonts.com/t/1dc8ecd8056a5ea7aa7de1db42b5b639.eot");
+    src: url("https://db.onlinewebfonts.com/t/1dc8ecd8056a5ea7aa7de1db42b5b639.eot?#iefix")format("embedded-opentype"),
+    url("https://db.onlinewebfonts.com/t/1dc8ecd8056a5ea7aa7de1db42b5b639.woff2")format("woff2"),
+    url("https://db.onlinewebfonts.com/t/1dc8ecd8056a5ea7aa7de1db42b5b639.woff")format("woff"),
+    url("https://db.onlinewebfonts.com/t/1dc8ecd8056a5ea7aa7de1db42b5b639.ttf")format("truetype"),
+    url("https://db.onlinewebfonts.com/t/1dc8ecd8056a5ea7aa7de1db42b5b639.svg#Gilroy-Regular")format("svg");
+}
+
+/* CSS BOILERPLATE */
+
+*  {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Gilroy-Regular', sans-serif;
+}
+
+html,body {
+    width: 100%;
+    height: 100%;
+}
+
+/* MAIN */
+#main {
+    width: 100vw;
+    height: 100vh;
+}
+
+/* NAV BAR */
+
+/* NAV-1 */
+
+.nav-1 {
+    height: 75px;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav-1 img {
+    width: 70px;
+}
+
+/* NAV-2 */
+
+.nav-2 {
+    height: 50px;
+    width: 100%;
+    background-color: #F2BD0D;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+
+.nav-2 i {
+    font-size: 20px;
+    padding: 0 1vw;
+}
+
+.links {
+    display: flex;
+}
+
+.links div {
+    display: flex;
+    align-items: center;
+    padding-right: 1vw;
+}
+
+.links a {
+    text-decoration: none;
+    color: white;
+    font-size: large;
+}
+
+/* CONTENT PAGE-1 */
+
+.page-1 {
+    height: calc(100% - 125px);
+    width: 100%;
+    display: flex;
+}
+
+.page-1 .section-1 {
+    width: 60vw;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 6vw;
+}
+
+
+
+.section-1 h2 {
+    font-size: 6vw;
+    padding-bottom: 0.50vw;
+    font-weight: 100;
+}
+
+span {
+    font-size: 7vw;
+    font-weight: 800;
+}
+
+.section-1 p {
+    font-size: 2vw;
+    padding-bottom: 1vw;
+
+}
+
+.section-1 button {
+    font-size: 2.5vw;
+    padding: 1vw;
+    border-radius: 50px;
+    border: 0.25vw solid #F2BD0D;
+}
+
+.section-1 button:hover  {
+    background-color: #F2BD0D;
+    color: white;
+}
+
+.page-1 .section-2 {
+    width: 40vw;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-right: 6vw;
+}
+
+.page-1 img {
+    width: 90%;
+}
+
+
+/* Media Query */
+
+@media (max-width:600px) {
+
+    /* NAV BAR */
+
+    /* NAV 1 */
+    .nav-1 {
+        height: 60px;
+    }
+    
+    .nav-1 img {
+        width: 55px;
+    }
+    
+    /* NAV-2 */
+    
+    .nav-2 {
+        height: 35px;        
+    }
+    
+    .nav-2 i {
+        font-size: 20px;
+        padding: 0 3vw;
+    }
+
+    .links a {
+        display: none;
+    }
+
+    /* CONTENT */
+    .page-1 {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .page-1 .section-1 {
+        padding: 0 2vw;
+    }
+
+    .page-1 .section-1-box {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 5vw;
+    }
+
+    .page-1 .section-1 {
+        width: 100vw;
+        /* height: 50vh; */
+        height: calc(calc(100vh - 95px) / 2);
+    }
+
+    .section-1 h2 {
+        font-size: 15vw;
+        text-align: center;
+    }
+
+    span {
+        font-size: 16vw;
+        text-decoration: underline #F2BD0D;
+    }
+
+    .section-1 p {
+        padding: 0 2vw;
+        font-size: 4vw;
+        text-align: center;
+    }
+
+    .button-box {
+        padding-top: 4vw;
+    }
+
+    .section-1 button {
+        font-size: 5vw;
+        padding: 2vw;
+    }
+
+    .page-1 .section-2 {
+        width: 100vw;
+        /* height: 50vh; */
+        height: calc(calc(100vh - 95px) / 2);
+    }
+
+    .section-2 img {
+        width: 90%;
+    }
+
+}
